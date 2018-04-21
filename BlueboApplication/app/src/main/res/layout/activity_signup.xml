@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#04046d"
+        tools:context="edu.swarthmore.cs.cs71.blueboapplication.SignupActivity">
+
+    <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+                android:text="Create your\nBluebo account:"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/blueboName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:gravity="center"
+                android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+                android:layout_marginTop="86dp"/>
+        <TextView
+                android:text="Sign up to start trading!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup_prompt"
+                android:textColor="#ffffff"
+                android:textStyle="italic" tools:layout_editor_absoluteY="208dp"
+                android:layout_below="@+id/blueboName" android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"/>
+        <EditText
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColorHint="#ffffff"
+                android:hint="first name"
+                android:textColor="#ffffff"
+                android:ems="10"
+                android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+                tools:layout_editor_absoluteY="167dp" tools:layout_editor_absoluteX="83dp"
+                android:id="@+id/new_first_name"
+                android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+        <EditText
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:textColorHint="#ffffff"
+                android:inputType="textPersonName"
+                android:hint="last name"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+                tools:layout_editor_absoluteY="210dp" tools:layout_editor_absoluteX="62dp"
+                android:id="@+id/new_last_name"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/new_first_name" android:layout_alignStart="@+id/new_first_name"/>
+        <EditText
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:ems="10"
+                android:hint="email address"
+                android:focusable="true"
+                android:id="@+id/new_email"
+                android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+                tools:layout_editor_absoluteY="264dp" tools:layout_editor_absoluteX="132dp"
+                android:layout_below="@+id/new_last_name" android:layout_alignStart="@+id/new_last_name"/>
+        <EditText
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:hint="password"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:focusable="true"
+                android:id="@+id/new_password"
+                android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+                tools:layout_editor_absoluteY="307dp" tools:layout_editor_absoluteX="98dp"
+                android:layout_below="@+id/new_email" android:layout_alignStart="@+id/new_email"/>
+        <Button
+                android:text="Sign Up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#04046d"
+                android:background="#ffffff"
+                android:id="@+id/signup_button" android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" android:layout_marginBottom="47dp"/>
+
+    </RelativeLayout>
+</LinearLayout>

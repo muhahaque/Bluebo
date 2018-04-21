@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#04046d"
+        tools:context="edu.swarthmore.cs.cs71.blueboapplication.LoginActivity">
+
+    <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <TextView
+                android:text="Welcome to"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcomeText"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:layout_marginTop="84dp" android:textSize="24sp" android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+        <TextView
+                android:text="bluebo"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/blueboName"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="100sp"
+                android:layout_below="@+id/welcomeText" android:layout_centerHorizontal="true"/>
+        <TextView
+                android:text="Knock on wood."
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/haha"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textSize="10sp"
+                android:layout_below="@+id/blueboName" android:layout_centerHorizontal="true"/>
+
+        <EditText
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:hint="email address"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:focusable="true"
+                android:id="@+id/user_email"
+                android:layout_above="@+id/user_password" android:layout_alignStart="@+id/user_password"
+                android:backgroundTint="#ffffff"/>
+
+        <EditText
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:hint="password"
+                android:textColorHint="#ffffff"
+                android:textColor="#ffffff"
+                android:focusable="true"
+                android:id="@+id/user_password" android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" android:layout_marginBottom="186dp"
+                android:backgroundTint="#ffffff"/>
+        <Button
+                android:text="Log In"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#04046d"
+                android:background="#ffffff"
+                android:layout_marginTop="77dp" android:id="@+id/login_button" android:layout_below="@+id/user_email"
+                android:layout_centerHorizontal="true"/>
+        <TextView
+                android:text="Don't have an account yet? Sign up here."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_below="@+id/login_button"
+                android:layout_centerHorizontal="true" android:layout_marginTop="25dp" android:id="@+id/signup_link"
+                android:textColor="#ffffff"
+                android:textStyle="italic"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

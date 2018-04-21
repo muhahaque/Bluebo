@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:context="edu.swarthmore.cs.cs71.blueboapplication.DirectTradeFragment">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+        <!--Searching for a user-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@drawable/grey_rounded_box"
+                android:orientation="horizontal">
+            <TextView
+                    android:text="@string/trade_with"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    style="@style/TradeContentTextView"/>
+            <!--<ImageView-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--app:srcCompat="@drawable/ic_search_black_24dp"-->
+                    <!--android:id="@+id/search_icon"/>-->
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    app:errorEnabled="true"
+                    android:layout_height="match_parent">
+                <android.support.design.widget.TextInputEditText
+                        android:id="@+id/search_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:background="@null"
+                        android:orientation="horizontal"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:queryHint="@string/swat_username"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <!--Filling out the trade request-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/grey_rounded_box"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+            <TextView
+                    android:text="@string/request"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:textSize="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TradeContentTextView"/>
+
+            <include
+                    android:id="@+id/request"
+                    layout="@layout/direct_trade_info"
+            />
+        </LinearLayout>
+
+        <!--Filling out the trade offer-->
+        <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="3.2"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/grey_rounded_box"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+            <TextView
+                    android:text="@string/offer"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    style="@style/TradeContentTextView"/>
+
+            <TextView
+                    android:text="@string/optional"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TradeContentTextView"/>
+
+            <include
+                    android:id="@+id/offer"
+                    layout="@layout/direct_trade_info"/>
+        </LinearLayout>
+
+        <!--Filling out the note-->
+        <LinearLayout
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/grey_rounded_box"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:text="@string/note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:gravity="left"
+                    style="@style/TradeContentTextView"/>
+
+            <android.support.design.widget.TextInputLayout
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="match_parent">
+
+                <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:fontFamily="sans-serif-smallcaps"
+                android:id="@+id/offer_note_txt"/>
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <!--Buttons at the bottom-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1">
+
+            <!--Send Request-->
+            <RelativeLayout
+                    android:id="@+id/send_request_container"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                <Button
+                        style="@style/DirectTradeButtons"
+                        android:text="@string/send_request"
+                        android:background="@drawable/button_rounded_box"
+                        android:layout_width="125dp"
+                        android:id="@+id/send_request_but"/>
+            </RelativeLayout>
+
+            <!--Cancel-->
+            <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+                <Button
+                        style="@style/DirectTradeButtons"
+                        android:text="@string/cancel"
+                        android:background="@drawable/button_rounded_box"
+                        android:layout_width="125dp"
+                        android:id="@+id/cancel_but"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "203419205120",
+    "firebase_url": "https://bluebo-application.firebaseio.com",
+    "project_id": "bluebo-application",
+    "storage_bucket": "bluebo-application.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:203419205120:android:e968f28d8b3bca93",
+        "android_client_info": {
+          "package_name": "edu.swarthmore.cs.cs71.blueboapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "203419205120-ssha75u0ktk3pm2stt2115b21fl4gba9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKq5kPoJSj6QkYjhlrIUhaMe-2ilvWfM4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

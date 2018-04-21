@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Bluebo Application</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_trade">Trade</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_login">Log In</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_firebase_login">FirebaseLogin</string>
+
+    <!--Strings related to Fragments-->
+    <string name="negotiations_fragment">Negotiations</string>
+    <string name="in_progress_fragment">In Progress</string>
+    <string name="completed_fragment">Completed</string>
+
+    <!-- TODO: Only used to get Transactions list example to show, should be replaced with data from server somehow -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_transactions">Transactions</string>
+    <string name="quantity">quantity</string>
+    <string name="currency">currency</string>
+    <string name="offer">Your Offer</string>
+    <string name="optional">(optional)</string>
+    <string name="note">Add a note (optional):</string>
+    <string name="send_a_note">Send an (optional) note about your trade.</string>
+    <string name="send_request">Send Request</string>
+    <string name="cancel">Cancel</string>
+    <string name="request">Your Request</string>
+    <string name="trade_with">Trade with:</string>
+    <string name="swat_username">Enter Swarthmore username</string>
+    <string name="requested">requested</string>
+    <string name="offered">offered</string>
+    <string name="requests">requests</string>
+    <string name="offers">offers</string>
+    <string name="market">Market</string>
+    <string name="from">from</string>
+    <string name="and">and</string>
+    <string name="request_of">request of</string>
+    <string name="offer_of">offer of</string>
+    <string name="to">to</string>
+
+    <string-array name="currencies_array">
+        <item>Meals</item>
+        <item>Points</item>
+        <item>Dollars</item>
+    </string-array>
+
+</resources>
